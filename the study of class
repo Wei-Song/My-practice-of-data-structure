@@ -1,0 +1,21 @@
+class Bag(object):
+    def __init__(self,maxsize=10):
+        self.maxsize = maxsize
+        self._items() = list()
+        
+    def add(self,item):
+        if len(self) >= maxsize:
+            raise Exception("Bag is full")
+        self._items.appened(item)
+        
+    def remove(self,item):
+        if len(self) <= 0:
+            raise Exception("Bag is empty")
+        self._items.remove(item)
+        
+    def __len__(self,item):
+        return len(self._item)
+        
+    def __iter__(self):
+        for item in self._items:
+            yield item
